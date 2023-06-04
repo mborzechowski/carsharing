@@ -5,11 +5,117 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../carsharing/CSS/reset.css">
     <link rel="stylesheet" href="../carsharing/CSS/style.css">
     <title>Document</title>
 </head>
 <body>
+<section class="home" id="home">
+    <div class="hero">
+        <header class="header">
+            <div class="container header__container">
 
+            <p class="logo__top"><img class="img-top" src="./images/Icon%20Logo%20Normal.svg" alt="Icon">car <span class="logo__top__colour">sharing</span></p>
+            <ul class="nav__top">
+                <li class="nav-btn"><a href="#home">home</a></li>
+                <li class="nav-btn"><a href="#blog">blog</a></li>
+                <li class="nav-btn"><a href="">service</a></li>
+                <li class="nav-btn"><a href="">contact</a></li>
+            </ul>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container main__container">
+                <div class="banner">car sharing</div>
+                <h1 class="text-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h1>
+                <div class="btn">
+                    <a class="btn-1" href="">share a car</a>
+                    <a class="btn-2" href="">key features</a>
+                </div>
+
+            </div>
+        </main>
+        </div>
+    <footer class="footer">
+    <a class="footer-btn" href="#"><img class="btn-arrow" src="./images/Icon%20Arrow%20Down.svg" alt="arrow-down">
+    </a>
+    </footer>
+</section>
+<section class="blog-main" id="blog">
+    <h2 class="blog-title">blog</h2>
+    <div class="container container__article">
+            <article class="article">
+            <img class="img-blog" src="./images/photo1.png" alt="gear"><h3 class="article-title">LOREM IPSUM SIT DOLOR</h3>
+                <div class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <a class="btn-blog" href="">read more</a>
+            </article>
+
+            <article class="article">
+            <img class="img-blog" src="./images/photo2.png" alt="gear"><h3 class="article-title">LOREM IPSUM SIT DOLOR</h3>
+                <div class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <a class="btn-blog" href="">read more</a>
+            </article>
+
+            <article class="article">
+            <img class="img-blog" src="./images/photo3.png" alt="gear"><h3 class="article-title">LOREM IPSUM SIT DOLOR</h3>
+                <div class="text-blog">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <a class="btn-blog" href="">read more</a>
+            </article>
+
+    </div>
+</section>
+<section class="service" id="service">
+    <h2 class="service-title">service</h2>
+    <div class="container container__service">
+        <article class="article-service">
+            <img class="img-service" src="./images/mini1.png" alt="car-interior">
+            <h3 class="service-article-title">LOREM IPSUM SIT DOLOR</h3>
+            <div class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+            <a class="btn-service" href="">read more</a>
+        </article>
+
+        <article class="article-service">
+            <img class="img-service" src="./images/mini2.png" alt="car-interior">
+            <h3 class="service-article-title">LOREM IPSUM SIT DOLOR</h3>
+            <div class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+            <a class="btn-service" href="">read more</a>
+        </article>
+
+        <article class="article-service">
+            <img class="img-service" src="./images/mini3.png" alt="car-interior">
+            <h3 class="service-article-title">LOREM IPSUM SIT DOLOR</h3>
+            <div class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+            <a class="btn-service" href="">read more</a>
+        </article>
+
+        <article class="article-service">
+            <img class="img-service" src="./images/mini4.png" alt="car-interior">
+            <h3 class="service-article-title">LOREM IPSUM SIT DOLOR</h3>
+            <div class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</div>
+            <a class="btn-service" href="">read more</a>
+        </article>
+    </div>
+</section>
+<section class="contact">
+    <h2 class="contact-title">contact</h2>
+    <div class="container container__contact">
+        <img class="img-contact" src="./images/Form%20Photo.png" alt="two-cars">
+        <form class="input-form">
+            <label class="hidden" for="name">name</label><input id='name' class="input-contact" type="text" placeholder="Type your name">
+            <label class="hidden" for="email">e-mail</label><input id="email" class="input-contact" type="text" placeholder="Type your e-mail">
+            <label class="hidden" for="message"></label><textarea id="message" class="input-contact-message" rows="3" cols="30" placeholder="Type your massage"></textarea>
+            <label><input class="checkbox" type="checkbox"><span class="text-checkbox">I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</span></label>
+            <a class="btn-form" href="">send</a>
+        </form>
+    </div>
+</section>
+<footer class="footer">
+    <p class="logo__footer"><img class="img-top" src="./images/Icon%20Logo%20Normal.svg" alt="Icon">car <span class="logo__top__colour">sharing</span></p>
+
+
+</footer>
 </body>
 </html>
