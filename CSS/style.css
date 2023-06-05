@@ -4,16 +4,28 @@
     --third-color: white;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 * {
     box-sizing: border-box;
-        font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
 }
 
 .nav__top a {
     text-decoration: none;
     color: var(--third-color);
     height: 88px;
-    width:128px;
+    width: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,8 +46,8 @@
 
 .header {
     border: var(--third-color) solid 2px 50%;
-    border-bottom:2px solid #FFFFFF33;
-    }
+    border-bottom: 2px solid #FFFFFF33;
+}
 
 .header__container {
     display: flex;
@@ -43,7 +55,7 @@
     align-items: center;
     height: 90px;
     font-family: 'Nunito Sans', sans-serif;
-    }
+}
 
 .header::before {
     content: "";
@@ -61,18 +73,18 @@
 
 .hero {
     background: url("../images/image.jpg") no-repeat center/cover;
-    height: calc(100vh - 55px);
+    height: calc(100% - 50px);
     position: relative;
 }
 
-.hero::before{
+.hero::before {
     content: "";
     width: 100%;
     height: 100%;
     background: #000000 0 0 no-repeat padding-box;;
     opacity: 0.3;
     position: absolute;
-    }
+}
 
 .logo__top {
     font-family: 'Nunito Sans', sans-serif;
@@ -149,7 +161,7 @@
     font-weight: bold;
 }
 
-.btn-1  {
+.btn-1, .btn-2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,28 +171,18 @@
     background: var(--base-color);
     box-shadow: 0 3px 6px #FF00004D;
     color: var(--third-color);
-    }
-
-.btn-2  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 66px;
-    width: 220px;
-    border-radius: 40px;
-    background: var(--third-color);
-    box-shadow: 0 3px 6px #FF00004D;
-    color: var(--base-color);
 }
 
-.btn a{
-    text-decoration: none;
+.btn-2 {
+    background: var(--third-color);
+    color: var(--base-color);
 }
 
 .footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--third-color);
 }
 
 .footer-btn {
@@ -193,6 +195,7 @@
     border-radius: 50%;
     box-shadow: 0 3px 6px #FF00004D;
     position: absolute;
+    top: calc(100vh - 77px);
 }
 
 
@@ -204,10 +207,11 @@
     width: 17px;
 }
 
-.blog-main{
+.blog-main {
     padding: 50px 0;
 
 }
+
 .blog-title, .contact-title {
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bold;
@@ -220,13 +224,14 @@
 }
 
 .blog-title::before, .blog-title::after, .contact-title::after, .contact-title::before {
-    content:"";
+    content: "";
     height: 3px;
     width: 50px;
     border-radius: 8px;
     background: var(--base-color);
     margin: 16px;
 }
+
 .container__article {
     display: flex;
     align-items: center;
@@ -234,6 +239,7 @@
     flex-grow: 1;
     gap: 16px;
 }
+
 .article {
     display: flex;
     flex-direction: column;
@@ -298,7 +304,7 @@
 }
 
 .service-title::before, .service-title::after {
-    content:"";
+    content: "";
     height: 3px;
     width: 50px;
     border-radius: 8px;
@@ -317,7 +323,7 @@
 .img-service {
     width: 170px;
     height: 170px;
-   }
+}
 
 .service-article-title {
     font-family: "Nunito Sans", sans-serif;
@@ -335,7 +341,8 @@
     letter-spacing: 0;
     padding-bottom: 26px;
 }
-.article-service{
+
+.article-service {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,6 +358,7 @@
     justify-content: center;
     gap: 16px;
     padding-bottom: 65px;
+    max-width: 904px;
 }
 
 .contact-title {
@@ -358,7 +366,7 @@
 }
 
 .input-form, .img-contact {
-    width: 50% ;
+    width: 50%;
 }
 
 .input-contact, .input-contact-message {
@@ -367,13 +375,13 @@
     width: 100%;
     height: 38px;
     padding-left: 12px;
-    outline:none;
-    }
+    outline: none;
+}
 
 input::placeholder, textarea::placeholder {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
-    color:#B2B2B2;
+    color: #B2B2B2;
     letter-spacing: 0;
 }
 
@@ -388,36 +396,32 @@ input:focus, textarea:focus {
     align-items: flex-start;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
-    color:#B2B2B2;
+    color: #B2B2B2;
 }
 
 .text-checkbox {
     font-family: 'Open Sans', sans-serif;
     font-size: 10px;
-    color:#B2B2B2;
-        padding-left: 20px;
+    color: #B2B2B2;
 }
 
 .input-form {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-        gap: 16px;
+    gap: 16px;
 }
 
 
-.checkbox   {
+.checkbox {
     appearance: none;
-    width: 22px;
+    width: 100px;
     height: 22px;
     border: 1px solid #D1D1D1;
     border-radius: 8px;
     position: relative;
-    }
-
-.hidden {
-    display: none;
 }
+
 
 .checkbox:checked::after {
     content: "";
@@ -429,6 +433,11 @@ input:focus, textarea:focus {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.checkbox-area {
+    display: flex;
+    gap:10px;
 }
 
 .btn-form {
@@ -452,11 +461,16 @@ input:focus, textarea:focus {
 
 /*FOOTER*/
 
-.footer {
+.footer-bottom {
     background: #28272C;
     padding: 40px 0;
 }
 
+.container__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
 .logo__footer {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 25px;
@@ -466,4 +480,41 @@ input:focus, textarea:focus {
     display: flex;
     justify-content: flex-start;
     gap: 10px;
+    margin-bottom: 22px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 141px;
+}
+
+.footer-menu-item {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 19px;
+}
+
+.footer-menu-item a {
+    color: var(--third-color);
+}
+
+.footer-submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.footer-menu-item a:hover {
+    color: var(--base-color);
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 16px;
+    color: #D1D1D1;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
 }
